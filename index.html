@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Task Manager</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Task Manager</h1>
-        
-        <div class="input-group">
-            <input type="text" id="taskInput" placeholder="Add a new task...">
-            <button id="addTaskBtn">Add Task</button>
-        </div>
+    <meta name="viewport" content="width=device-width,
+                   initial-scale=1.0">
+    <title>Complex Layout with Flexbox</title>
+    <style>
+        /* Complex Layout with Flexbox */
+        .complex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-        <ul id="taskList">
-            <!-- Dynamic tasks will appear here -->
-        </ul>
+        .sidebar {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            flex: 1 1 200px;
+            /* Sidebar width */
+        }
+
+        .content {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            flex: 2 1 400px;
+            /* Content area width */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Complex Layout with Sidebar and Content -->
+    <div class="complex-container">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Main Content Area</div>
     </div>
 
-    <script src="app.js"></script>
 </body>
+
 </html>
